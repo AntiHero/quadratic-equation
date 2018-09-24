@@ -17,6 +17,8 @@ module.exports = function solveEquation(equation) {
         if (arr[i] == 'a') {
             if ( i == 0) {
                 a[0] = 1;
+            } else  if ( arr[i - 1] == '-') {
+                a[0] = -1;
             } else {
                 for (let k = 0; k < i; k++) {
                     a.push(arr[k]);
